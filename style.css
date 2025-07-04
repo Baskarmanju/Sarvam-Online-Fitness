@@ -49,6 +49,19 @@ body { font-family: Arial, sans-serif; background: #fff; color: #333; line-heigh
 .insta { background: #c13584; }   /* Instagram style pink */
 .whatsapp { background: #25D366; } /* WhatsApp green */
 
+/* Before & After Image Styling */
+.before-after-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.before-after-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 /* Footer */
 .footer {
   text-align: center;
