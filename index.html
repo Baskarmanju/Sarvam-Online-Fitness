@@ -1,12 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sarvam Online Fitness</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  color: #00695c;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.insta {
+  background: #c13584;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.footer {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media(max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .nav a {
+    margin-bottom: 0.5rem;
+  }
+}
+
+  </style>
+</head><body>
   <header class="header">
     <img src="logo.jpg" alt="Logo" class="logo">
     <nav class="nav">
@@ -14,43 +117,33 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <section id="home">
+  </header>  <section id="home">
     <img src="Yoga.jpeg" alt="Yoga Banner" class="banner">
     <h1>Sarvam Online Fitness</h1>
     <p>Your Journey to Wellness Begins Here</p>
-  </section>
-
-  <section id="services" class="section">
+  </section>  <section id="services" class="section">
     <h2>Lifestyle & Dietetics</h2>
-    <p>We specialize in helping individuals adopt healthier lifestyles through customized diet and wellness strategies...</p>
+    <p>We specialize in helping individuals adopt healthier lifestyles through customized diet and wellness strategies. Our services are designed to prevent and manage lifestyle-related disorders, promoting holistic health and long-term well-being.</p><h3>Nutrition Counselling</h3>
+<p>Our nutrition counseling focuses on personal dietary planning for individuals of all ages, addressing issues like weight management, deficiencies, digestive problems, and boosting overall health.</p>
 
-    <h3>Nutrition Counselling</h3>
-    <p>Our nutrition counselling focuses on personal dietary planning...</p>
+<h3>Lifestyle Disorder Management</h3>
+<p>We provide expert guidance and support for conditions such as diabetes, hypertension, PCOS, thyroid disorders, obesity, and high cholesterol using a natural and holistic approach.</p>
 
-    <h3>Lifestyle Disorder Management</h3>
-    <p>We provide expert guidance and support for diabetes, hypertension...</p>
+<h3>Wellness Coaching</h3>
+<p>One-on-one coaching sessions with experts to improve sleep, stress management, and develop healthy routines tailored to your lifestyle and body needs.</p>
 
-    <h3>Wellness Coaching</h3>
-    <p>One-on-one coaching sessions to improve sleep, stress management...</p>
+<h3>Special Diet Plans</h3>
+<p>We offer personalized diet plans for medical conditions, pregnancy, postnatal recovery, sports fitness, and senior wellness needs.</p>
 
-    <h3>Special Diet Plans</h3>
-    <p>Personalized diet plans for medical conditions, pregnancy, etc.</p>
+<h3>Food Guidance</h3>
+<p>We educate clients on smart food choices, balanced meals, mindful eating habits, and label reading to build lasting healthy relationships with food.</p>
 
-    <h3>Food Guidance</h3>
-    <p>We educate clients on smart food choices, balanced meals...</p>
-  </section>
-
-  <section id="connect" class="section">
+  </section>  <section id="connect" class="section">
     <h2>Join Us Now</h2>
     <a href="https://instagram.com/sarvam_holistic_wellness" class="btn insta">Follow on Instagram</a>
     <a href="https://wa.me/917986823762" class="btn whatsapp">Chat on WhatsApp</a>
-  </section>
-
-  <footer id="contact" class="footer">
+  </section>  <footer id="contact" class="footer">
     <p>Email: subhathradevi@sarvamfitness.com</p>
     <p>Phone: +91 97868 23762</p>
   </footer>
-</body>
-</html>
+</body></html>
