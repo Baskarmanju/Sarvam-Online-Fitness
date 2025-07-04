@@ -14,40 +14,39 @@
       padding: 0;
       text-align: center;
     }
-
+    .banner {
+      width: 100%;
+      height: auto;
+    }
     header {
       background-color: #222;
       color: white;
       padding: 30px 20px;
     }
-
     section {
       padding: 30px 20px;
     }
-
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
-      background-color: #007bff;
+      background-color: blue;
       color: white;
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
-
     .btn:hover {
-      background-color: #0056b3;
-    }
-
-    img {
-      max-width: 90%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 10px;
+      background-color: darkblue;
     }
   </style>
 </head>
 <body>
+
+  <!-- Banner Image -->
+  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />
+
   <header>
     <h1>Sarvam Online Fitness</h1>
     <p>Your Journey to Wellness Begins Here</p>
@@ -55,10 +54,9 @@
 
   <section>
     <h2>Join Us Now</h2>
-    <a class="btn" href="https://www.instagram.com/your_instagram_username" target="_blank">Follow on Instagram</a>
-    <a class="btn" href="https://wa.me/919786823762" target="_blank">Chat on WhatsApp</a>
-
-    <img src="yoga.jpg" alt="Yoga Pose Image" />
+    <a href="https://instagram.com/yourprofile" class="btn" target="_blank">Follow on Instagram</a>
+    <a href="https://wa.me/919786823762" class="btn" target="_blank">Chat on WhatsApp</a>
   </section>
+
 </body>
 </html>
