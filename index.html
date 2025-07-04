@@ -1,48 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sarvam Online Fitness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifestyle & Dietetics | Sarvam Online Fitness</title>
   <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <!-- Header Section -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="logo.jpg" alt="Logo" />
-      <span class="brand">Sarvam</span>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
 
-  <!-- Banner Image -->
-  <img src="Yoga.jpeg" alt="Yoga Pose Banner" class="banner" />
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-  <!-- Main Title -->
-  <main class="main-content">
+.banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.section {
+  padding: 2rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #00695c;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+  </style>
+</head><body>
+  <header>
     <h1>Sarvam Online Fitness</h1>
-    <p>Your Journey to Wellness Begins Here</p>
-
-    <section class="cta">
-      <h2>Join Us Now</h2>
-      <a href="https://www.instagram.com/yourprofile" class="btn" target="_blank">Follow on Instagram</a>
-      <a href="https://wa.me/919786823762" class="btn" target="_blank">Chat on WhatsApp</a>
-    </section>
-
-    <footer>
-      <h3>Contact Us</h3>
-      <p>Email: subhathradevi@gmail.com</p>
-      <p>Phone: +91 97868 23762</p>
-    </footer>
-  </main>
-
-</body>
-</html> 
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />  <section class="section" id="services">
+    <h2>Lifestyle & Dietetics</h2>
+    <p>We specialize in helping individuals adopt healthier lifestyles through customized diet and wellness strategies. Our services are designed to prevent and manage lifestyle-related disorders, promoting holistic health and long-term well-being.</p>
+  </section>  <section class="section">
+    <h2>Nutrition Counselling</h2>
+    <p>Our nutrition counseling focuses on personal dietary planning for individuals of all ages, addressing issues like weight management, deficiencies, digestive problems, and boosting overall health.</p>
+  </section>  <section class="section">
+    <h2>Lifestyle Disorder Management</h2>
+    <p>We provide expert guidance and support for conditions such as diabetes, hypertension, PCOS, thyroid disorders, obesity, and high cholesterol using a natural and holistic approach.</p>
+  </section>  <section class="section">
+    <h2>Wellness Coaching</h2>
+    <p>One-on-one coaching sessions with experts to improve sleep, stress management, and develop healthy routines tailored to your lifestyle and body needs.</p>
+  </section>  <section class="section">
+    <h2>Special Diet Plans</h2>
+    <p>We offer personalized diet plans for medical conditions, pregnancy, postnatal recovery, sports fitness, and senior wellness needs.</p>
+  </section>  <footer class="footer" id="contact">
+    <p>Contact: subhathradevi@sarvamfitness.com | Phone: +91 97868 23762</p>
+  </footer>
+</body></html>
