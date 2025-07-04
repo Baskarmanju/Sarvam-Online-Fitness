@@ -49,41 +49,24 @@ body { font-family: Arial, sans-serif; background: #fff; color: #333; line-heigh
 .insta { background: #c13584; }   /* Instagram style pink */
 .whatsapp { background: #25D366; } /* WhatsApp green */
 
-/* Before & After Image Styling */
-.before-after-section {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.before-after-section {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.before-after-imgs {
+.before-after-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.img-wrapper {
+  text-align: center;
 }
 
 .single-img {
+  max-width: 180px;
   width: 100%;
-  max-width: 200px; /* Shrink from 300px to 200px */
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Optional: reduce padding on mobile */
-@media (max-width: 600px) {
-  .before-after-section {
-    padding: 20px 10px;
-  }
-
-  .single-img {
-    max-width: 150px;
-  }
 }
 
 /* Footer */
