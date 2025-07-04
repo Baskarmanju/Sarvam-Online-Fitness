@@ -12,20 +12,49 @@
       color: #222;
       margin: 0;
       padding: 0;
-      text-align: center;
+      animation: fadeIn 1.5s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background-color: #222;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     .banner {
       width: 100%;
       height: auto;
     }
+
     header {
       background-color: #222;
       color: white;
       padding: 30px 20px;
     }
+
     section {
       padding: 30px 20px;
     }
+
     .btn {
       display: inline-block;
       margin: 10px;
@@ -37,26 +66,38 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     .btn:hover {
       background-color: darkblue;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
 
-  <!-- Banner Image -->
-  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- Banner -->
+  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" id="home" />
+
+  <!-- Header -->
   <header>
     <h1>Sarvam Online Fitness</h1>
     <p>Your Journey to Wellness Begins Here</p>
   </header>
 
-  <section>
-    <h2>Join Us Now</h2>
-    <a href="https://instagram.com/yourprofile" class="btn" target="_blank">Follow on Instagram</a>
-    <a href="https://wa.me/919786823762" class="btn" target="_blank">Chat on WhatsApp</a>
-  </section>
-
-</body>
-</html>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We offer personalized online fitness programs
