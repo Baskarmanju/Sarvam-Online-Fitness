@@ -53,14 +53,8 @@
       text-align: center;
     }
 
-    .section h2 {
-      color: #00695c;
+    .section h2, .section p, .section h3 {
       margin-bottom: 1rem;
-    }
-
-    .section p {
-      font-size: 16px;
-      margin-bottom: 1.5rem;
     }
 
     .btn {
@@ -89,20 +83,25 @@
     }
 
     footer p {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 1s ease-in-out;
-    }
-
-    footer.animate p {
-      opacity: 1;
-      transform: translateY(0);
+      font-size: 16px;
     }
 
     footer a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    /* Fade-in animation for sections */
+    .animate {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .animate.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     @media(max-width: 600px) {
@@ -137,14 +136,14 @@
   <!-- Banner -->
   <section id="home">
     <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />
-    <div class="section">
+    <div class="section animate">
       <h2>Your Journey to Wellness Begins Here</h2>
       <p>Yoga • Fitness Training • Strength Training — All Online</p>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="section">
+  <section id="services" class="section animate">
     <h2>Lifestyle & Dietetics</h2>
     <p>We help individuals adopt healthier lifestyles through customized diet and wellness strategies to prevent and manage lifestyle-related disorders.</p>
 
@@ -165,32 +164,34 @@
   </section>
 
   <!-- Social Connect -->
-  <section id="connect" class="section">
+  <section id="connect" class="section animate">
     <h2>Join Us Now</h2>
     <a href="https://instagram.com/sarvam_holistic_wellness" class="btn insta" target="_blank">Instagram</a>
     <a href="https://wa.me/919786823762" class="btn whatsapp" target="_blank">WhatsApp</a>
   </section>
 
-  <!-- Footer with Reliable Animation -->
-  <footer class="footer" id="contact">
+  <!-- Footer with Animation -->
+  <footer class="footer animate" id="contact">
     <p>
       Contact: <a href="mailto:subhathradevi@gmail.com">subhathradevi@gmail.com</a> |
       WhatsApp: <a href="https://wa.me/919786823762" target="_blank">+91 97868 23762</a>
     </p>
   </footer>
 
+  <!-- Animate all .animate elements -->
   <script>
-    // Animate using IntersectionObserver
-    const footer = document.querySelector('.footer');
-    const observer = new IntersectionObserver((entries) => {
+    const animatedItems = document.querySelectorAll('.animate');
+
+    const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          footer.classList.add('animate');
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
-    observer.observe(footer);
+    animatedItems.forEach(item => observer.observe(item));
   </script>
 </body>
 </html>
