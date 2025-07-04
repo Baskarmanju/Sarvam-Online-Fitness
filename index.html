@@ -1,149 +1,203 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sarvam Online Fitness</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-    }body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-  line-height: 1.6;
-}
+      box-sizing: border-box;
+    }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #000;
-  padding: 1rem 2rem;
-  flex-wrap: wrap;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
 
-.logo {
-  width: 120px;
-  height: auto;
-}
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-.nav {
-  display: flex;
-  gap: 1.5rem;
-}
+    header h1 {
+      font-size: 20px;
+    }
 
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.2rem;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-.banner {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
-}
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
 
-.section {
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
+    .section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
 
-.section h2 {
-  color: #00695c;
-  margin-bottom: 1rem;
-}
+    .section h2 {
+      color: #00695c;
+      margin-bottom: 1rem;
+    }
 
-.section p {
-  font-size: 16px;
-  margin-bottom: 1.5rem;
-}
+    .section p {
+      font-size: 16px;
+      margin-bottom: 1.5rem;
+    }
 
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  margin: 0.5rem;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
-}
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+    }
 
-.insta {
-  background: #c13584;
-}
+    .insta {
+      background: #c13584;
+    }
 
-.whatsapp {
-  background: #25D366;
-}
+    .whatsapp {
+      background: #25D366;
+    }
 
-.footer {
-  text-align: center;
-  background: #000;
-  color: #fff;
-  padding: 1rem;
-  margin-top: 2rem;
-}
+    footer {
+      text-align: center;
+      background: #000;
+      color: #fff;
+      padding: 1.5rem 1rem;
+    }
 
-@media(max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    footer p {
+      animation: fadeSlideUp 1s ease-in-out forwards;
+      opacity: 0;
+      font-size: 16px;
+    }
 
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-  }
+    footer.visible p {
+      opacity: 1;
+    }
 
-  .nav a {
-    margin-bottom: 0.5rem;
-  }
-}
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.3rem 0;
+      }
+    }
   </style>
-</head><body>
-  <header class="header">
-    <img src="logo.jpg" alt="Logo" class="logo">
-    <nav class="nav">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Sarvam Online Fitness</h1>
+    <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <section id="home">
-    <img src="Yoga.jpeg" alt="Yoga Banner" class="banner">
-    <h1>Sarvam Online Fitness</h1>
-    <p>Your Journey to Wellness Begins Here</p>
-  </section>  <section id="services" class="section">
+  </header>
+
+  <!-- Banner -->
+  <section id="home">
+    <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />
+    <div class="section">
+      <h2>Your Journey to Wellness Begins Here</h2>
+      <p>Yoga • Fitness Training • Strength Training — All Online</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
     <h2>Lifestyle & Dietetics</h2>
-    <p>We specialize in helping individuals adopt healthier lifestyles through customized diet and wellness strategies. Our services are designed to prevent and manage lifestyle-related disorders, promoting holistic health and long-term well-being.</p><h3>Nutrition Counselling</h3>
-<p>Our nutrition counseling focuses on personal dietary planning for individuals of all ages, addressing issues like weight management, deficiencies, digestive problems, and boosting overall health.</p>
+    <p>We help individuals adopt healthier lifestyles through customized diet and wellness strategies to prevent and manage lifestyle-related disorders.</p>
 
-<h3>Lifestyle Disorder Management</h3>
-<p>We provide expert guidance and support for conditions such as diabetes, hypertension, PCOS, thyroid disorders, obesity, and high cholesterol using a natural and holistic approach.</p>
+    <h3>Nutrition Counselling</h3>
+    <p>Personal dietary planning for all ages — weight management, deficiencies, digestive health and more.</p>
 
-<h3>Wellness Coaching</h3>
-<p>One-on-one coaching sessions with experts to improve sleep, stress management, and develop healthy routines tailored to your lifestyle and body needs.</p>
+    <h3>Lifestyle Disorder Management</h3>
+    <p>Support for diabetes, hypertension, PCOS, thyroid issues, and high cholesterol with holistic methods.</p>
 
-<h3>Special Diet Plans</h3>
-<p>We offer personalized diet plans for medical conditions, pregnancy, postnatal recovery, sports fitness, and senior wellness needs.</p>
+    <h3>Wellness Coaching</h3>
+    <p>One-on-one sessions for better sleep, stress control, and healthy daily routines.</p>
 
-<h3>Food Guidance</h3>
-<p>We educate clients on smart food choices, balanced meals, mindful eating habits, and label reading to build lasting healthy relationships with food.</p>
+    <h3>Special Diet Plans</h3>
+    <p>Customized diets for medical recovery, pregnancy, senior wellness and athletic needs.</p>
 
-  </section>  <section id="connect" class="section">
+    <h3>Food Guidance</h3>
+    <p>Learn smart food choices, balanced meals, and mindful eating habits that last a lifetime.</p>
+  </section>
+
+  <!-- Social Connect -->
+  <section id="connect" class="section">
     <h2>Join Us Now</h2>
-    <a href="https://instagram.com/sarvam_holistic_wellness" class="btn insta">Follow on Instagram</a>
-    <a href="https://wa.me/917986823762" class="btn whatsapp">Chat on WhatsApp</a>
-  </section>  <footer id="contact" class="footer">
-    <p>Email: subhathradevi@sarvamfitness.com</p>
-    <p>Phone: +91 97868 23762</p>
+    <a href="https://instagram.com/sarvam_holistic_wellness" class="btn insta" target="_blank">Instagram</a>
+    <a href="https://wa.me/919786823762" class="btn whatsapp" target="_blank">WhatsApp</a>
+  </section>
+
+  <!-- Footer with Animation -->
+  <footer class="footer" id="contact">
+    <p>
+      Contact: <a href="mailto:subhathradevi@gmail.com">subhathradevi@gmail.com</a> |
+      WhatsApp: <a href="https://wa.me/919786823762" target="_blank">+91 97868 23762</a>
+    </p>
   </footer>
-</body></html>
+
+  <script>
+    // Animate footer when in view
+    window.addEventListener('scroll', function () {
+      const footer = document.querySelector('.footer');
+      const rect = footer.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        footer.classList.add('visible');
+      }
+    });
+  </script>
+</body>
+</html>
