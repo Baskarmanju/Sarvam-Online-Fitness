@@ -9,36 +9,51 @@
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
     }header {
-  background-color: #222;
+  background: url('banner.jpg') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
   color: white;
-  padding: 1rem 2rem;
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+  animation: fadeInDown 1s ease-out;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
+.logo {
+  height: 60px;
 }
 
 nav a {
   color: white;
-  margin-left: 1.5rem;
+  margin: 0 15px;
   text-decoration: none;
-  font-size: 16px;
+  font-weight: bold;
 }
 
-.banner {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section {
   padding: 2rem;
   background-color: #fff;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .section h2 {
@@ -52,6 +67,33 @@ nav a {
   color: #444;
 }
 
+#connect {
+  text-align: center;
+  padding: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.insta {
+  background: #E1306C;
+}
+
+.wa {
+  background: #25D366;
+}
+
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
 .footer {
   background-color: #222;
   color: white;
@@ -62,13 +104,15 @@ nav a {
   </style>
 </head><body>
   <header>
-    <h1>Sarvam Online Fitness</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" />  <section class="section" id="services">
+    <div class="banner-content">
+      <img src="logo.jpg" alt="Sarvam Logo" class="logo">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <section class="section" id="services">
     <h2>Lifestyle & Dietetics</h2>
     <p>We specialize in helping individuals adopt healthier lifestyles through customized diet and wellness strategies. Our services are designed to prevent and manage lifestyle-related disorders, promoting holistic health and long-term well-being.</p>
   </section>  <section class="section">
@@ -83,7 +127,16 @@ nav a {
   </section>  <section class="section">
     <h2>Special Diet Plans</h2>
     <p>We offer personalized diet plans for medical conditions, pregnancy, postnatal recovery, sports fitness, and senior wellness needs.</p>
-  </section>  <footer class="footer" id="contact">
-    <p>Contact: subhathradevi@sarvamfitness.com | Phone: +91 97868 23762</p>
+  </section>  <section class="section">
+    <h2>Food Guidance</h2>
+    <p>We educate clients on smart food choices, balanced meals, mindful eating habits, and label reading to build lasting healthy relationships with food.</p>
+  </section>  <section id="connect">
+    <a href="https://instagram.com/sarvam_holistic_wellness" class="btn insta">Follow on Instagram</a>
+    <a href="https://wa.me/919786823762" class="btn wa">Chat on WhatsApp</a>
+  </section>  <section id="contact">
+    <p>Email: subhathradevi@sarvamfitness.com</p>
+    <p>Phone: +91 97868 23762</p>
+  </section>  <footer class="footer">
+    <p>© 2025 Sarvam Online Fitness. All rights reserved.</p>
   </footer>
 </body></html>
