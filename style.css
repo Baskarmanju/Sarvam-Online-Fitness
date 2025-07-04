@@ -1,23 +1,49 @@
+/* Default (Desktop) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header img {
+  width: 180px;
+  height: auto;
+}
+
+nav a {
+  color: white;
+  margin-left: 2rem;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mobile (Max width 768px) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   header img {
     width: 120px;
-    height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav a {
-    color: #222 !important; /* change white to dark on mobile */
-    font-weight: bold;
-    display: inline-block;
+    color: #222 !important;
     margin: 0.5rem 0;
+    font-size: 16px;
   }
 
   .section {
-    padding-top: 3rem;
+    padding: 1.5rem;
   }
 }
