@@ -189,15 +189,18 @@
     </p>
   </footer>
 
+  <!-- Animation Trigger Script -->
   <script>
-    // Animate footer when in view
-    window.addEventListener('scroll', function () {
+    function checkFooterVisible() {
       const footer = document.querySelector('.footer');
       const rect = footer.getBoundingClientRect();
       if (rect.top < window.innerHeight) {
         footer.classList.add('visible');
       }
-    });
+    }
+
+    window.addEventListener('scroll', checkFooterVisible);
+    window.addEventListener('load', checkFooterVisible);
   </script>
 </body>
 </html>
