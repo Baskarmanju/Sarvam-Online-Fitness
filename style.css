@@ -49,35 +49,7 @@ body { font-family: Arial, sans-serif; background: #fff; color: #333; line-heigh
 .insta { background: #c13584; }   /* Instagram style pink */
 .whatsapp { background: #25D366; } /* WhatsApp green */
 
-/* Before & After Styling */
-.before-after-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 10px;
-}
 
-.img-wrapper {
-  flex: 1 1 250px;
-  max-width: 250px;
-  text-align: center;
-}
-
-.single-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Make responsive for mobile */
-@media (max-width: 600px) {
-  .before-after-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 /* Footer */
 .footer {
