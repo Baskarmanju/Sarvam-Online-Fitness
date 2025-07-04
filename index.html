@@ -89,30 +89,20 @@
     }
 
     footer p {
-      animation: fadeSlideUp 1s ease-in-out forwards;
       opacity: 0;
-      font-size: 16px;
+      transform: translateY(20px);
+      transition: all 1s ease-in-out;
     }
 
-    footer.visible p {
+    footer.animate p {
       opacity: 1;
+      transform: translateY(0);
     }
 
     footer a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    @keyframes fadeSlideUp {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     @media(max-width: 600px) {
@@ -181,7 +171,7 @@
     <a href="https://wa.me/919786823762" class="btn whatsapp" target="_blank">WhatsApp</a>
   </section>
 
-  <!-- Footer with Animation -->
+  <!-- Footer with Reliable Animation -->
   <footer class="footer" id="contact">
     <p>
       Contact: <a href="mailto:subhathradevi@gmail.com">subhathradevi@gmail.com</a> |
@@ -189,18 +179,18 @@
     </p>
   </footer>
 
-  <!-- Animation Trigger Script -->
   <script>
-    function checkFooterVisible() {
-      const footer = document.querySelector('.footer');
-      const rect = footer.getBoundingClientRect();
-      if (rect.top < window.innerHeight) {
-        footer.classList.add('visible');
-      }
-    }
+    // Animate using IntersectionObserver
+    const footer = document.querySelector('.footer');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          footer.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.5 });
 
-    window.addEventListener('scroll', checkFooterVisible);
-    window.addEventListener('load', checkFooterVisible);
+    observer.observe(footer);
   </script>
 </body>
 </html>
