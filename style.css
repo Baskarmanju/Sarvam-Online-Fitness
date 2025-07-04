@@ -15,7 +15,7 @@ header {
 }
 
 .logo {
-  width: 140px;
+  width: 120px;
   height: auto;
 }
 
@@ -31,15 +31,14 @@ nav a {
   font-size: 16px;
 }
 
-/* Responsive Banner */
+/* Banner */
 .banner {
   width: 100%;
-  height: auto;
   max-height: 400px;
   object-fit: cover;
 }
 
-/* Sections */
+/* Section */
 .section {
   padding: 2rem;
   background-color: #fff;
@@ -57,7 +56,6 @@ nav a {
   color: #444;
 }
 
-/* Footer */
 .footer {
   background-color: #222;
   color: white;
@@ -65,7 +63,7 @@ nav a {
   padding: 1rem;
 }
 
-/* Mobile Styles */
+/* Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -74,16 +72,10 @@ nav a {
 
   nav {
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
   }
 
-  nav a {
-    font-size: 18px;
-  }
-
   .logo {
-    width: 100px;
-    margin-bottom: 1rem;
+    width: 90px;
   }
 }
