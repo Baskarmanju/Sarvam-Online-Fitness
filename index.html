@@ -3,101 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="csjtZSns4hDHV3INpivkswyEL0oPwWg7jSI-_wGsCO4" />
   <title>Sarvam Online Fitness</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    nav {
-      background-color: #222;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .banner {
-      width: 100%;
-      height: auto;
-    }
-
-    header {
-      background-color: #222;
-      color: white;
-      padding: 30px 20px;
-    }
-
-    section {
-      padding: 30px 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background-color: blue;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .btn:hover {
-      background-color: darkblue;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation Menu -->
+  <!-- Navigation -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-content">
+      <img src="logo.jpg" alt="Sarvam Logo" class="logo animate-logo" />
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- Banner -->
-  <img src="Yoga.jpeg" alt="Yoga Banner" class="banner" id="home" />
+  <!-- Banner Section -->
+  <section id="home" class="banner">
+    <img src="Yoga.jpeg" alt="Yoga Pose" class="banner-img" />
+    <h1 class="main-title">Sarvam Online Fitness</h1>
+    <p class="subtitle">Your Journey to Wellness Begins Here</p>
+  </section>
 
-  <!-- Header -->
-  <header>
-    <h1>Sarvam Online Fitness</h1>
-    <p>Your Journey to Wellness Begins Here</p>
-  </header>
+  <!-- Join Section -->
+  <section class="join">
+    <h2>Join Us Now</h2>
+    <div class="buttons">
+      <a href="https://www.instagram.com/your_instagram_username" target="_blank" class="btn">Follow on Instagram</a>
+      <a href="https://wa.me/919786823762" target="_blank" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We offer personalized online fitness programs
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@sarvamfitness.com</p>
+    <p>Phone: +91 97868 23762</p>
+  </section>
+
+</body>
+</html>
