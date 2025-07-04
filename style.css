@@ -48,7 +48,36 @@ body { font-family: Arial, sans-serif; background: #fff; color: #333; line-heigh
 }
 .insta { background: #c13584; }   /* Instagram style pink */
 .whatsapp { background: #25D366; } /* WhatsApp green */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
 
+.service-box {
+  background: #fff;
+  border-left: 4px solid #007bff;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box h3 {
+  margin-bottom: 0.5rem;
+  color: #00695c;
+}
+
+.service-box p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
 
 
